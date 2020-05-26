@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899.12.30 00:00:00.000.536,D:\Delphi embarcadero\Project1.dproj=D:\Delphi embarcadero\PTH.dproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.966,D:\Delphi embarcadero\Unit1.dfm=D:\Delphi embarcadero\PokemonTypenHelfer.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.966,D:\Delphi embarcadero\Unit1.pas=D:\Delphi embarcadero\PokemonTypenHelfer.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.611,=D:\Delphi embarcadero\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.755,=D:\Delphi embarcadero\Unit1.pas</Transaction>
+  </Transactions>
+</BorlandProject>
