@@ -107,7 +107,7 @@ Own_Kampf =SEHR_EFFEKTIV+'Normal;Eis;Gestein;Unlicht;Stahl;'+NICHT_EFFEKTIV+'Gif
 
 Own_Gift  =SEHR_EFFEKTIV+'Pflanze;Fee;'+NICHT_EFFEKTIV+'Gift;Boden;Gestein;Geist;'+KEINE_WIRKUNG+'Stahl';
 
-Own_Boden =SEHR_EFFEKTIV+'Feuer;Elektro;Gift;Gestein;Gestein;'+NICHT_EFFEKTIV+'Pflanze;Käfer;'+KEINE_WIRKUNG+'Flug';
+Own_Boden =SEHR_EFFEKTIV+'Feuer;Elektro;Gift;Gestein;Stahl;'+NICHT_EFFEKTIV+'Pflanze;Käfer;'+KEINE_WIRKUNG+'Flug';
 
 Own_Flug   =SEHR_EFFEKTIV+'Pflanze;Kampf;Käfer;'+NICHT_EFFEKTIV+'Elektro;Gestein;Stahl';
 
@@ -618,7 +618,7 @@ begin
 
     //vergleich der Typenlisten
     CompareThisWithList2(ListType1_2x,ListType2_2x,ListType2Normal,ListType2_05x,ListType2_0x,
-                          SL_4x,SL_2x,SL_05x,SL_0x);
+                          SL_4x,SL_2x,{SL_05x}SL_1x,SL_0x);
     CompareThisWithList2(ListType1Normal,ListType2_2x,ListType2Normal,ListType2_05x,ListType2_0x,
                           SL_2x,SL_1x,SL_05x,SL_0x);
     CompareThisWithList2(ListType1_05x,ListType2_2x,ListType2Normal,ListType2_05x,ListType2_0x,
@@ -700,10 +700,10 @@ begin
   slTyp1:=TStringList.Create;
   ResultList:=TStringList.Create;
   try
-    input1:=GetTypenDef(ComboBoxAngriff2.ItemIndex);
+    input1:=GetTypenOwn(ComboBoxAngriff2.ItemIndex);
     slTyp2.Delimiter := ';';   // Trennzeichen einstellen
     slTyp2.DelimitedText := input1; // Delphi die Arbeit amchen lassen
-    input2:=GetTypenDef(ComboBoxAngriff.ItemIndex);
+    input2:=GetTypenOwn(ComboBoxAngriff.ItemIndex);
     slTyp1.Delimiter := ';';   // Trennzeichen einstellen
     slTyp1.DelimitedText := input2; // Delphi die Arbeit amchen lassen
     ResultList:=CompareTypList1TypList2(slTyp1,slTyp2);
@@ -758,7 +758,7 @@ begin
   isGegPokFertig:=false;
   sl:=TStringList.Create;
   try
-    input:=GetTypenDef(ComboBoxAngriff.ItemIndex);
+    input:=GetTypenOwn(ComboBoxAngriff.ItemIndex);
     sl.Delimiter := ';';   // Trennzeichen einstellen
     sl.DelimitedText := input; // Delphi die Arbeit amchen lassen
     RichEdit1.Lines:=sl;
@@ -774,7 +774,7 @@ begin
     isGegPokFertig:=true;
     sl.Free;
   end;
-  //mal gucken wir man sich die passenden Typen holt!
+  //mal gucken wie man sich die passenden Typen holt!
   if ComboBoxAngriff.ItemIndex <> 0 then
     ComboBoxAngriff2.Enabled:= true
   else
@@ -783,6 +783,7 @@ begin
     ComboBoxAngriff2.ItemIndex:=0;
   end;
 
+  ComboBoxAngriff2.ItemIndex := 0;
 
 end;
 
@@ -903,6 +904,8 @@ begin
     ComboBoxVerteidigung2.Enabled:=false;
     ComboBoxVerteidigung2.ItemIndex:=0;
   end;
+
+  ComboBoxVerteidigung2.ItemIndex := 0;
 end;
 
 {-----------------------------------------------------------------------------
