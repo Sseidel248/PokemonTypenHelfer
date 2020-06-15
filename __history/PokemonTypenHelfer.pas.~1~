@@ -101,13 +101,13 @@ Own_Pflanze=SEHR_EFFEKTIV+'Wasser;Boden;Gestein;'+NICHT_EFFEKTIV+'Feuer;Pflanze;
 
 Own_Elektro=SEHR_EFFEKTIV+'Wasser;Flug;'+NICHT_EFFEKTIV+'Pflanze;Elektro;Drache;'+KEINE_WIRKUNG+'Boden';
 
-Own_Eis   =SEHR_EFFEKTIV+'Pflanze;Boden;Flug;Drache;'+NICHT_EFFEKTIV+'Feuer;Wasser;Eis;Stahl';
+Own_Eis   =SEHR_EFFEKTIV+'Pflanze;Boden;Flug;Drache;'+NICHT_EFFEKTIV+'Feuer;Wasser;Eis';
 
 Own_Kampf =SEHR_EFFEKTIV+'Normal;Eis;Gestein;Unlicht;Stahl;'+NICHT_EFFEKTIV+'Gift;Flug;Psycho;Käfer;Fee;'+KEINE_WIRKUNG+'Geist';
 
-Own_Gift  =SEHR_EFFEKTIV+'Pflanze;Fee;'+NICHT_EFFEKTIV+'Gift;Boden;Gestein;Geist;'+KEINE_WIRKUNG+'Stahl';
+Own_Gift  =SEHR_EFFEKTIV+'Pflanze;Gift;'+NICHT_EFFEKTIV+'Gift;Boden;Gestein;Geist;'+KEINE_WIRKUNG+'Stahl';
 
-Own_Boden =SEHR_EFFEKTIV+'Feuer;Elektro;Gift;Gestein;Gestein;'+NICHT_EFFEKTIV+'Pflanze;Käfer;'+KEINE_WIRKUNG+'Flug';
+Own_Boden =SEHR_EFFEKTIV+'Feuer;Elektro;Gift;'+NICHT_EFFEKTIV+'Pflanze;Käfer;'+KEINE_WIRKUNG+'Flug';
 
 Own_Flug   =SEHR_EFFEKTIV+'Pflanze;Kampf;Käfer;'+NICHT_EFFEKTIV+'Elektro;Gestein;Stahl';
 
