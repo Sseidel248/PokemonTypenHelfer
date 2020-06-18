@@ -700,10 +700,10 @@ begin
   slTyp1:=TStringList.Create;
   ResultList:=TStringList.Create;
   try
-    input1:=GetTypenDef(ComboBoxAngriff2.ItemIndex);
+    input1:=GetTypenOwn(ComboBoxAngriff2.ItemIndex);
     slTyp2.Delimiter := ';';   // Trennzeichen einstellen
     slTyp2.DelimitedText := input1; // Delphi die Arbeit amchen lassen
-    input2:=GetTypenDef(ComboBoxAngriff.ItemIndex);
+    input2:=GetTypenOwn(ComboBoxAngriff.ItemIndex);
     slTyp1.Delimiter := ';';   // Trennzeichen einstellen
     slTyp1.DelimitedText := input2; // Delphi die Arbeit amchen lassen
     ResultList:=CompareTypList1TypList2(slTyp1,slTyp2);
@@ -758,7 +758,7 @@ begin
   isGegPokFertig:=false;
   sl:=TStringList.Create;
   try
-    input:=GetTypenDef(ComboBoxAngriff.ItemIndex);
+    input:=GetTypenOwn(ComboBoxAngriff.ItemIndex);
     sl.Delimiter := ';';   // Trennzeichen einstellen
     sl.DelimitedText := input; // Delphi die Arbeit amchen lassen
     RichEdit1.Lines:=sl;
@@ -823,10 +823,10 @@ begin
   slTyp1:=TStringList.Create;
   ResultList:=TStringList.Create;
   try
-    input1:=GetTypenOwn(ComboBoxVerteidigung2.ItemIndex);
+    input1:=GetTypenDef(ComboBoxVerteidigung2.ItemIndex);
     slTyp2.Delimiter := ';';   // Trennzeichen einstellen
     slTyp2.DelimitedText := input1; // Delphi die Arbeit amchen lassen
-    input2:=GetTypenOwn(ComboBoxVerteidigung.ItemIndex);
+    input2:=GetTypenDef(ComboBoxVerteidigung.ItemIndex);
     slTyp1.Delimiter := ';';   // Trennzeichen einstellen
     slTyp1.DelimitedText := input2; // Delphi die Arbeit amchen lassen
     ResultList:=CompareTypList1TypList2(slTyp1,slTyp2);
@@ -881,7 +881,7 @@ i:Integer;
 begin
   sl:=TStringList.Create;
   try
-    input:=GetTypenOwn(ComboBoxVerteidigung.ItemIndex);
+    input:=GetTypenDef(ComboBoxVerteidigung.ItemIndex);
     sl.Delimiter := ';';   // Trennzeichen einstellen
     sl.DelimitedText := input; // Delphi die Arbeit amchen lassen
     RichEdit2.Lines:=sl;

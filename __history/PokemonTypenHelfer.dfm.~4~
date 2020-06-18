@@ -67,6 +67,8 @@ object Form1: TForm1
       Height = 541
       Align = alRight
       TabOrder = 0
+      ExplicitLeft = 201
+      ExplicitHeight = 431
       object GroupBox3: TGroupBox
         Left = 1
         Top = 1
@@ -75,6 +77,7 @@ object Form1: TForm1
         Align = alClient
         Caption = 'Ergebnis'
         TabOrder = 0
+        ExplicitHeight = 429
         object RichEdit1: TRichEdit
           Left = 2
           Top = 18
@@ -91,6 +94,9 @@ object Form1: TForm1
           ScrollBars = ssVertical
           TabOrder = 0
           Zoom = 100
+          ExplicitLeft = 3
+          ExplicitTop = 16
+          ExplicitHeight = 1032
         end
       end
     end
@@ -189,6 +195,10 @@ object Form1: TForm1
     Font.Style = [fsBold]
     ParentFont = False
     TabOrder = 1
+    ExplicitLeft = 512
+    ExplicitTop = 271
+    ExplicitWidth = 529
+    ExplicitHeight = 410
     object LTypEig1: TLabel
       Left = 6
       Top = 37
@@ -254,6 +264,8 @@ object Form1: TForm1
       Height = 541
       Align = alRight
       TabOrder = 1
+      ExplicitLeft = 201
+      ExplicitHeight = 390
       object GroupBox4: TGroupBox
         Left = 1
         Top = 1
@@ -262,6 +274,7 @@ object Form1: TForm1
         Align = alClient
         Caption = 'Ergebnis'
         TabOrder = 0
+        ExplicitHeight = 388
         object RichEdit2: TRichEdit
           Left = 2
           Top = 18
@@ -278,6 +291,7 @@ object Form1: TForm1
           ScrollBars = ssVertical
           TabOrder = 0
           Zoom = 100
+          ExplicitHeight = 368
         end
       end
     end
